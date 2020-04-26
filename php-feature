@@ -1,0 +1,5 @@
+<?php
+    /** Переводы дат в Unix и в нормал  */
+    $normDate = date('d.m.y H:i');
+    $unixDate = strtotime($curDate); // в unix
+    $normDate = date('d.m.y H:i', $unixDateStart); // из unix в норм дату
