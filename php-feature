@@ -1,5 +1,24 @@
+/** Composer autoload */
+1) Создать руками в проект файл composer.json
+2) написать в нем следующее 
+{
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    }
+}
+Это значит коневая папка проекта имеет нэймспейс 'app'
+3) выполнить composer install
+
+
+
+
 <?php
     /** Переводы дат в Unix и в нормал  */
     $normDate = date('d.m.y H:i');
     $unixDate = strtotime($curDate); // в unix
     $normDate = date('d.m.y H:i', $unixDateStart); // из unix в норм дату
+    
+    
+    
